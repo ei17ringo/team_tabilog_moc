@@ -13,12 +13,12 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
+  <!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -42,7 +42,7 @@
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -59,6 +59,7 @@
         <!-- <link href="css/css/toukou.css" rel="stylesheet">
         <link href="css/css/toukou2.css" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="star.css">
 
        <!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"> -->
         <!-- <link href="css/css/toukou.css" rel="stylesheet">
@@ -95,7 +96,7 @@
 						<div id="flipkart-navbar">
 							  &nbsp;
     <!-- <div class="container">
-       
+
         <div class="row row2">
             <div class="flipkart-navbar-search smallsearch col-sm-4 col-xs-11">
                 <div class="row">
@@ -107,7 +108,7 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </div> -->
@@ -149,7 +150,7 @@
 					</div>
 				</div>
 			</header>
-			
+
 		</div>
 		 <div class="fh5co-hero">
             <div class="fh5co-overlay"></div>
@@ -161,52 +162,94 @@
                 </div>
             </div>
 
-		
+
 <div class="container">
 <div class="col-md-6">
 
-    <div class="form-area">  
+    <div class="form-area">
         <form role="form">
         <br style="clear:both">
-                    <h3 style="margin-bottom: 25px; text-align: center;">新規投稿画面</h3>
+                    <h3 style="margin-bottom: 25px; text-align: center;">新規投稿</h3>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="タイトル" required>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="タイトル：" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="場所" required>
+                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="場所：" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="オススメ度" required>
-                        
-                       
-                    </div>
-	                   <div class="row">
-		                    <h2>Working Star Ratings for Bootstrap 3 <small>Hover and click on a star</small></h2>
-	                   </div>
-                    <div class="row lead">
-                     <div id="stars" class="starrr"></div>
-                        You gave a rating of <span id="count">3</span> star(s)
-	                  </div>
-    
-                    <div class="row lead">
-                      <p>Also you can give a default rating by adding attribute data-rating</p>
-                    <div id="stars-existing" class="starrr" data-rating='4'></div>
-                      You gave a rating of <span id="count-existing">4</span> star(s)
-                    </div>
-                    
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="オススメ度：" required>
 
-                    <div class="form-group">
-                    <textarea class="form-control" type="textarea" id="message" placeholder="投稿内容" maxlength="200" rows="20"></textarea>
-                        <span class="help-block"><p id="characterLeft" class="help-block "></p></span>
                     </div>
+
+	                   <!-- 星の評価 -->
+	                   <!-- <section>
+<div class="container">
+        <h2>Evaluation<small> Description </small></h2>
+</div>
+<div class="container">
+
+    <h3>[Name] Lorem Ipsum</h3>
+    <div class="row lead evaluation">
+        <div id="colorstar" class="starrr ratable" ></div>
+        <span id="count">0</span> star(s) - <span id="meaning"> </span>
+
+            <div class='indicators' style="display:none">
+                <div id='textwr'>What went wrong?</div>
+                <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
+                <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
+
+                <span class="button-checkbox">
+                <button type="button" class="btn criteria" data-color="info">Punctuallity</button>
+                 <input type="checkbox" class="hidden"  />
+                </span>
+                <span class="button-checkbox">
+                <button type="button" class="btn criteria" data-color="info">Assistance</button>
+                 <input type="checkbox" class="hidden"  />
+                </span>
+                <span class="button-checkbox">
+                <button type="button" class="btn criteria" data-color="info">Knowledge</button>
+                 <input type="checkbox" class="hidden"  />
+                </span>
+            </div>
+
+	</div>
+
+    <h3>[Name] Lorem Ipsum</h3>
+    <div class="row lead evaluation">
+        <div id="colorstar" class="starrr ratable" ></div>
+        <span id="count">0</span> star(s) - <span id="meaning"> </span>
+
+            <div class='indicators' style="display:none">
+             <div id='textwr'>What went wrong?</div>
+            <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
+            <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval"  style="display:none;">
+
+                <span class="button-checkbox">
+                <button type="button" class="btn" data-color="info">Punctuallity</button>
+                 <input type="checkbox" class="hidden"  />
+                </span>
+                <span class="button-checkbox">
+                <button type="button" class="btn" data-color="info">Assistance</button>
+                 <input type="checkbox" class="hidden"  />
+                </span>
+                <span class="button-checkbox">
+                <button type="button" class="btn" data-color="info">Knowledge</button>
+                 <input type="checkbox" class="hidden"  />
+                </span>
+            </div>
+
+    </div>
+
+</div>
+ -->
 
 
                                            <!--  <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="fa fa-music"></i></a>
                                             &nbsp;　 &nbsp;
                                             <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a>
                                              &nbsp;　 &nbsp; -->
-<!-- 
+<!--
                                             <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record"><i class="glyphicon glyphicon-wrench">編集</i></a>
                                              &nbsp;　 &nbsp;
                                             <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="glyphicon glyphicon-trash">削除</i></a>
@@ -217,16 +260,27 @@
        <!--  <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">次へ</button> -->
 
        <div class="form-group">
-		<label for="InputFile">写真</label>
-		<input type="file" id="InputFile">
-		<p class="help-block"></p>
-	  </div>
-        <div class="col-md-offset-4 col-md-4 col-sm-4">
-	    <button type="submit" class="btn btn-default">確認画面へ</button>
-       </div>
+         <textarea class="form-control" id="mobile" name="mobile"  rows="15" placeholder="内容：" required></textarea>
+        </div>
         </form>
-    </div>
-</div>
+
+       <div class="form-group">
+		    <label for="InputFile">写真</label>
+		    <input type="file" id="InputFile">
+		     <h6>*最大９枚までアップロードができます</h6>
+		    <p class="help-block"></p>
+	     </div>
+	      <div class="row">
+	      	<div class="col-md-4 col-md-offset-4">
+	        <button type="submit" class="btn btn-default">投稿内容を確認する</button>
+        </div>
+	      </div>
+	     	　
+　　　</div>
+
+　　　　　
+  </div>
+
 </div>
 
 		<!-- fh5co-blog-section -->
