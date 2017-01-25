@@ -32,13 +32,3 @@
 .carousel-indicators .active {
 background: #428bca;
 }
-
-/*modal*/
-.modal-middle {     //モーダルウィンドウの縦表示位置を調整
-    margin: 5% auto;
-}
- 
-.modal-img_footer { //表示予定のテキストとボタンを中央揃え
-    padding: .5em;
-    text-align: center;
-}
