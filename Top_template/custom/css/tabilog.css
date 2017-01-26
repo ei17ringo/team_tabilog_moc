@@ -57,3 +57,7 @@ background: #428bca;
     padding: .5em;
     text-align: center;
 }
+
+button.own-hover:hover {
+	background-color: #D3D3D3 !important;
+}
