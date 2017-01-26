@@ -13,12 +13,13 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!--
+
+  <!-- 
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE
+	FREE HTML5 TEMPLATE 
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-
+		
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -39,10 +40,10 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-
+	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -53,29 +54,47 @@
 	<link rel="stylesheet" href="css/superfish.css">
 
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link href="css/kensaku.css" rel="stylesheet"> -->
-	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-        <!-- <link href="css/css/kensaku2.css" rel="stylesheet"> -->
-        <!-- <link href="css/css/toukou.css" rel="stylesheet">
-        <link href="css/css/toukou2.css" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="star.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-       <!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"> -->
-        <!-- <link href="css/css/toukou.css" rel="stylesheet">
-        <link href="css/css/toukou2.css" rel="stylesheet">
-        <link href="css/css/toukou3.css" rel="stylesheet">
- -->
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/Star.js"></script>
+	<!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<!-- 旅ログ -->
+	<link href="custom/css/tabilog.css" rel="stylesheet">
+
+<!-- カルーセル読み込み　 -->
+<!-- <script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-modalmanager.js"></script>
+<link rel="stylesheet" href="css/bootstrap-lightbox.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-lightbox.min.js"></script>
+ -->
+<!-- <script src="js/tabilog.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/bootstrap-modalmanager.js"></script>
+<link rel="stylesheet" href="css/bootstrap-lightbox.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-lightbox.min.js"></script> -->
 
 	</head>
+
+
+
 	<body>
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
@@ -162,10 +181,9 @@
                 </div>
             </div>
 
-
+<!-- 新規投稿のところからボタンのところまで -->
 <div class="container">
 <div class="col-md-offset-2 col-md-8">
-
     <div class="form-area">
         <form role="form">
         <br style="clear:both">
@@ -176,95 +194,48 @@
 
                     <div class="form-group">
                      <div class="row">
-                     	<div class="col-md-4">
-                       <input type="text" class="form-control" id="mobile" name="mobile" placeholder="国：" required>
+                     	<div class="col-md-12">
+     　　　　　　　　　　　<div class="form-inline">
+
+                        <!-- セレクトボックス -->
+                          <select name="list" class="form-control">
+                           <option value="item1">日本</option>
+                           <option value="item2" selected>国名</option>
+                           <option value="item3">ベトナム</option>
+                           <option value="item3">フィリピン</option>
+                          </select>
+
+                          <!-- セレクトボックス -->
+                          <select name="list" class="form-control">
+                           <option value="item1">日本</option>
+                           <option value="item2" selected>地域</option>
+                           <option value="item3">ベトナム</option>
+                           <option value="item3">フィリピン</option>
+                          </select>
+
+                            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="都市：" required>
+
+                       </div>
+                      </div>
+     　　　　　　　　　　　
+                       <!-- <input type="text" class="form-control" id="mobile" name="mobile" placeholder="国：" required> -->
                      </div>
-                     <div class="col-md-4">
+                     <!-- <div class="col-md-4">
                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="地域：" required>
-                     </div>
-                     <div class="col-md-4">
+                     </div> -->
+                     <!-- <div class="col-md-4">
                        <input type="text" class="form-control" id="mobile" name="mobile" placeholder="都市：" required>
-                     </div>
+                     </div> -->
                     </div>
                      </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="オススメ度：" required>
-
+                        <!-- <div class="row lead"> -->
+                        <span id="stars" class="starrr">オススメ度：</span>
+                       <span id="count">0</span> star(s)
+                    	<!-- </div> -->
                     </div>
 
-	                   <!-- 星の評価 -->
-	                   <!-- <section>
-<div class="container">
-        <h2>Evaluation<small> Description </small></h2>
-</div>
-<div class="container">
-
-    <h3>[Name] Lorem Ipsum</h3>
-    <div class="row lead evaluation">
-        <div id="colorstar" class="starrr ratable" ></div>
-        <span id="count">0</span> star(s) - <span id="meaning"> </span>
-
-            <div class='indicators' style="display:none">
-                <div id='textwr'>What went wrong?</div>
-                <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
-                <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval" style="display:none;">
-
-                <span class="button-checkbox">
-                <button type="button" class="btn criteria" data-color="info">Punctuallity</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-                <span class="button-checkbox">
-                <button type="button" class="btn criteria" data-color="info">Assistance</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-                <span class="button-checkbox">
-                <button type="button" class="btn criteria" data-color="info">Knowledge</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-            </div>
-
-	</div>
-
-    <h3>[Name] Lorem Ipsum</h3>
-    <div class="row lead evaluation">
-        <div id="colorstar" class="starrr ratable" ></div>
-        <span id="count">0</span> star(s) - <span id="meaning"> </span>
-
-            <div class='indicators' style="display:none">
-             <div id='textwr'>What went wrong?</div>
-            <input id="rate[]" name="rate[]" type="text" placeholder="" class="form-control input-md" style="display:none;">
-            <input id="rating[]" name="rating[]" type="text" placeholder="" class="form-control input-md rateval"  style="display:none;">
-
-                <span class="button-checkbox">
-                <button type="button" class="btn" data-color="info">Punctuallity</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-                <span class="button-checkbox">
-                <button type="button" class="btn" data-color="info">Assistance</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-                <span class="button-checkbox">
-                <button type="button" class="btn" data-color="info">Knowledge</button>
-                 <input type="checkbox" class="hidden"  />
-                </span>
-            </div>
-
-    </div>
-
-</div>
- -->
-
-
-                                           <!--  <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="fa fa-music"></i></a>
-                                            &nbsp;　 &nbsp;
-                                            <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a>
-                                             &nbsp;　 &nbsp; -->
-<!--
-                                            <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Sound Record"><i class="glyphicon glyphicon-wrench">編集</i></a>
-                                             &nbsp;　 &nbsp;
-                                            <a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="glyphicon glyphicon-trash">削除</i></a>
-                                            <span class="help-block"><p id="characterLeft" class="help-block "></p></span> -->
 
 
 
@@ -288,6 +259,7 @@
 	      </div>
 	     	　
 　　　 </div> 
+		</div>
 
 　　　　　
   </div>
@@ -337,6 +309,7 @@
 	<!-- Superfish -->
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.js"></script>
+	<script src="js/star_2.js"></script>
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
