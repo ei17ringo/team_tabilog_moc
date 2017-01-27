@@ -1,68 +1,14 @@
-/*.center {
-    margin-top:50px;   
+.login{
+
 }
 
-.modal-header {
-	padding-bottom: 5px;
-}
-
-.modal-footer {
-    	padding: 0;
-	}
-    
-.modal-footer .btn-group button {
-	height:40px;
-	border-top-left-radius : 0;
-	border-top-right-radius : 0;
-	border: none;
-	border-right: 1px solid #ddd;
-}
-	
-.modal-footer .btn-group:last-child > button {
-	border-right: 0;
-}
-*/
-
-
-
-/*.center {
-    margin-top:50px;   
-}
-
-.modal-header {
-	padding-bottom: 5px;
-}
-
-.modal-footer {
-    	padding: 0;
-	}
-    
-.modal-footer .btn-group button {
-	height:40px;
-	border-top-left-radius : 0;
-	border-top-right-radius : 0;
-	border: none;
-	border-right: 1px solid #ddd;
-}
-	
-.modal-footer .btn-group:last-child > button {
-	border-right: 0;
+/*.maintopic{
+	text-align:center;
 }*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
-	margin-top: 25px;}
+/*.fh5co-testimonial text-center animate-box p{
+	text-align:right;
+}*/
 
 .title{
 	text-align:center;
@@ -81,11 +27,17 @@
 	float:right;
 }
 
-
+/*.table{
+	float:left;
+}*/
+/*.table-map{
+	float:left;
+}*/
 .evaluation{
 	text-align:center;
 }
 
+<<<<<<< HEAD
 
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -237,3 +189,5 @@ body{
     display:block;    
 }
 
+=======
+>>>>>>> 82e9c47601bdf5a71595846ab408dc2a3630f4eb
