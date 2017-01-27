@@ -13,6 +13,9 @@
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
+	<!-- Google mapを複数読み込むのに必要 -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 
   <!-- 
 	//////////////////////////////////////////////////////
@@ -99,7 +102,7 @@
 			<h1>Login to Your Account</h1><br>
 			 <form>
 				<input type="text" name="user" placeholder="Username">
-				<input type="text" name="mail" placeholder="Mailadress">
+				<input type="text" name="mail" placeholder="Mailaddress">
 				<input type="password" name="pass" placeholder="Password">
 				<input type="submit" name="login" class="login loginmodal-submit" value="Login">
 				</form>
@@ -192,6 +195,8 @@
 			
 		</div>
 
+
+
 		
 
 
@@ -221,9 +226,35 @@
   <div class="row">
    <div class="col-md-3 col-md-3 col-md-3 col-md-3">
     <div class="fh5co-testimonial text-center animate-box"> -->
+    <!-- <h1>●●さんの投稿内容一覧</h1> -->
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" style="padding-left: 10px">
+      <button type="button" class="btn btn-default navbar-btn pull-left">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+      <div class="navbar-text navbar-brand-centered"><h3>●●さんの投稿一覧</h3></div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container pagination">
+		<div class="row">
+			<ul class="pagination">
+			    <li><a href="#">«</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">»</a></li>
+			</ul>
+		</div>
+	</div>
 				
 	<div class="container">
-  		<div class="row">
+  		<div class="row" width="1500">
 	   		<div class="col-sm-3">
 				<table border="3" width="280px" class="table">
 			 	<tr>
@@ -245,7 +276,7 @@
 			 	</table>
 			</div>
 			<div class="col-sm-3">
-			 	<div id="map" style="width:280px; height:314px;">
+			 	<div id="map_canvas_01" class="" style="width:280px; height:314px;">
 	    			<script type="text/javascript" src="custom/js/tabilog.js">
 	    			</script>
 	        		<script async defer
@@ -274,7 +305,68 @@
 			 	</table>
 			</div>
 			<div class="col-sm-3">
-			 	<div id="chizu" style="width:280px; height:314px;">
+			 	<div id="map_canvas_02" class="" style="width:280px; height:314px;">
+	    			<script type="text/javascript" src="custom/js/tabilog.js">
+	    			</script>
+	        		<script async defer
+	      			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb7OPnnqxQiEZPG4T3ACsxXENeRfq5LMs&callback=initMap">
+	        		</script>
+	    		</div>
+    		</div>
+		</div>
+		<br>
+		<div class="row" width="1500">
+	   		<div class="col-sm-3">
+				<table border="3" width="280px" class="table">
+			 	<tr>
+			  	<td colspan="3" height="20px" class="title">セブ旅行</td>
+			 	</tr>
+			 	<tr>
+			  	<td height="70px" colspan="3">
+			  	<p class="star">★★★☆☆</p>家族４人でセブに旅行に行きました。海もきれいで最高でした!とくにホテルは想像以上に...
+			  	<p class="btn btn-default" href="#">More Info</p></td>
+			 	</tr>
+			 	<tr>
+			  	<td height="60px">写真1</td>
+			  	<td height="60px">写真2</td>
+			  	<td height="60px">写真3</td>
+			 	</tr>
+			 	<tr>
+			  	<td colspan="3" height="80px" class="evaluation">この記事が参考になったと答えた人<br>はい●●人　いいえ●●人</td>
+			 	</tr>
+			 	</table>
+			</div>
+			<div class="col-sm-3">
+			 	<div id="map_canvas_03" class="" style="width:280px; height:314px;">
+	    			<script type="text/javascript" src="custom/js/tabilog.js">
+	    			</script>
+	        		<script async defer
+	      			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb7OPnnqxQiEZPG4T3ACsxXENeRfq5LMs&callback=initMap">
+	        		</script>
+	    		</div>
+    		</div>
+		<div class="col-sm-3">
+				<table border="3" width="280px" class="table">
+			 	<tr>
+			  	<td colspan="3" height="20px" class="title">セブ旅行</td>
+			 	</tr>
+			 	<tr>
+			  	<td height="70px" colspan="3">
+			  	<p class="star">★★★☆☆</p>家族４人でセブに旅行に行きました。海もきれいで最高でした!とくにホテルは想像以上に...
+			  	<p class="btn btn-default" href="#">More Info</p></td>
+			 	</tr>
+			 	<tr>
+			  	<td height="60px">写真1</td>
+			  	<td height="60px">写真2</td>
+			  	<td height="60px">写真3</td>
+			 	</tr>
+			 	<tr>
+			  	<td colspan="3" height="80px" class="evaluation">この記事が参考になったと答えた人<br>はい●●人　いいえ●●人</td>
+			 	</tr>
+			 	</table>
+			</div>
+			<div class="col-sm-3">
+			 	<div id="map_canvas_04" class="" style="width:280px; height:314px;">
 	    			<script type="text/javascript" src="custom/js/tabilog.js">
 	    			</script>
 	        		<script async defer
@@ -624,6 +716,21 @@
 			</div>
 		</div> -->
 		<!-- fh5co-blog-section -->
+<br>
+<br>
+<div class="container pagination">
+	<div class="row">
+		<ul class="pagination">
+		    <li><a href="#">«</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">»</a></li>
+		</ul>
+	</div>
+</div>
 
 
 
@@ -648,6 +755,75 @@
 				</div>
 			</div>
 		</footer>
+
+	<!-- Google mapを複数読み込むのに必要 -->
+	<script type="text/javascript">
+  (function(){
+    var latlng = new google.maps.LatLng(34.687298, 135.526226);
+    var myOptions = {
+        zoom: 15
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_01 = new google.maps.Map(
+        document.getElementById("map_canvas_01")
+      , myOptions
+    );
+    var marker = new google.maps.Marker({ 
+        position: latlng, 
+        map: map_01
+    });
+
+
+    var latlng = new google.maps.LatLng(34.651312, 135.510388);
+    var myOptions = {
+        zoom: 15
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_02 = new google.maps.Map(
+        document.getElementById("map_canvas_02")
+      , myOptions
+    );
+    var marker = new google.maps.Marker({ 
+        position: latlng, 
+        map: map_02
+    });
+
+
+    var latlng = new google.maps.LatLng(34.809425, 135.532477);
+    var myOptions = {
+        zoom: 12
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_03 = new google.maps.Map(
+        document.getElementById("map_canvas_03")
+      , myOptions
+    );
+    var marker = new google.maps.Marker({ 
+        position: latlng, 
+        map: map_03
+    });
+
+    var latlng = new google.maps.LatLng(34.809425, 135.532477);
+    var myOptions = {
+        zoom: 12
+      , center: latlng
+      , mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map_03 = new google.maps.Map(
+        document.getElementById("map_canvas_04")
+      , myOptions
+    );
+    var marker = new google.maps.Marker({ 
+        position: latlng, 
+        map: map_03
+    });
+
+  }());
+  </script>
+
 	
 
 	</div>
