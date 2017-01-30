@@ -14,6 +14,18 @@
 	<meta name="author" content="FREEHTML5.CO" />
 
 
+  <style>
+    .relative {
+        position: relative;
+    }
+    .absolute {
+        position: absolute;
+        top: -20px;
+        left: 180px;
+    }
+  </style>
+
+
   <!-- 
 	//////////////////////////////////////////////////////
 
@@ -204,18 +216,19 @@
 
                         <!-- セレクトボックス -->
                           <select name="list" class="form-control">
-                           <option value="item1">日本</option>
-                           <option value="item2" selected>国名</option>
+                           <option value="item1" selected>国名</option>
+                           <option value="item2">日本</option>
                            <option value="item3">ベトナム</option>
-                           <option value="item3">フィリピン</option>
+                           <option value="item4">フィリピン</option>
                           </select>
 
                           <!-- セレクトボックス -->
                           <select name="list" class="form-control">
-                           <option value="item1">日本</option>
-                           <option value="item2" selected>地域</option>
+
+                           <option value="item1" selected>地域</option>
+                           <option value="item2">日本</option>
                            <option value="item3">ベトナム</option>
-                           <option value="item3">フィリピン</option>
+                           <option value="item4">フィリピン</option>
                           </select>
 
                             <input type="text" class="form-control" id="mobile" name="mobile" placeholder="都市：" required>
@@ -273,7 +286,7 @@
                     <div class="row">
 
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal1" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal1" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg alt="" class="absolute"></a></div>
 
 
                       <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal2" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
@@ -287,7 +300,7 @@
 
                 <div class="item">
                     <div class="row">
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal5" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425">
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal5" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425">
                       <img src="images/batsu.jpeg alt=" class="absolute">
                       </a></div>
 
