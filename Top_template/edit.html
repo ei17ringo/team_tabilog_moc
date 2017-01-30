@@ -14,16 +14,20 @@
 	<meta name="author" content="FREEHTML5.CO" />
 
 
-  <style>
-    .relative {
+  <!-- <style>
+     .relative {
         position: relative;
+        z-index: 1;
     }
     .absolute {
         position: absolute;
-        top: -20px;
-        left: 180px;
+        z-index: 2;
+        top: 0px;
+        left: 150px;
+        width:30px;
+        height:30px;
     }
-  </style>
+  </style> -->
 
 
   <!-- 
@@ -71,6 +75,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- バツじるし -->
     <link rel="stylesheet" type="text/css" href="css/batsu.css">
+    <!-- 画像モーダル -->
+    <link rel="stylesheet" type="text/css" href="css/edit_modal.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -85,8 +91,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<!-- 旅ログ -->
-	<link href="custom/css/tabilog.css" rel="stylesheet">
-
+	<!-- <link href="custom/css/tabilog.css" rel="stylesheet">
+ -->
 <!-- カルーセル読み込み　 -->
 <!-- <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -265,6 +271,7 @@
 		          <h6>*最大９枚までアップロードができます</h6>
 		          <p class="help-block"></p>
 	          </div>
+            <br>
 
 
                      <!-- 画像の表示 モーダル -->
@@ -286,14 +293,14 @@
                     <div class="row">
 
 
-                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal1" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg alt="" class="absolute"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal1" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg"  class="absolute"></a></div>
 
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal2" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal2" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal3" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal3" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal3" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal3" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
                     </div><!--.row-->
                 </div><!--.item-->
@@ -301,15 +308,15 @@
                 <div class="item">
                     <div class="row">
                       <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal5" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425">
-                      <img src="images/batsu.jpeg alt=" class="absolute">
+                      <img src="images/batsu.jpeg" class="absolute">
                       </a></div>
 
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal6" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal6" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal7" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal7" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
-                      <div class="col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal8" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a></div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal8" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
 
 
@@ -318,22 +325,14 @@
 
                 <div class="item">
                     <div class="row">
-                       <div class="col-md-3">
-                       　<img src="images/1.jpeg" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal9" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425" width="250" height="250"></a>
-                       </div>
+                       <div class="relative col-md-3"><img src="images/1.jpeg" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal9" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425" width="250" height="250"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
 
-                      <div class="col-md-3">
-                      　<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal10" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a>
-                      </div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal10" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
-                      <div class="col-md-3">
-                      　<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal11" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a>
-                      </div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal11" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
-                      <div class="col-md-3">
-                      　<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal12" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"></a>
-                      </div>
+                      <div class="relative col-md-3"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;" data-toggle="modal" data-target="#image_Modal12" style="cursor:pointer" class="img-responsive img-thumbnail thumbnail　aligncenter size-full wp-image-425"><img src="images/batsu.jpeg" class="absolute"></a></div>
 
                     </div><!--.row-->
                 </div><!--.item-->
@@ -596,10 +595,10 @@
 </div>
 	 <div class="row"></div>
 　　　　<div class="row">
-	      	<div class="col-md-4 col-md-offset-4" style="padding-left: 74px;">
+	      	<div class="col-md-offset-5">
 	        <button type="submit" class="btn btn-default">編集内容を確認する</button>
             </div>
-	      
+
 </div>
 
 	     	　
