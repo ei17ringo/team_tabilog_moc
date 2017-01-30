@@ -12,6 +12,7 @@
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
 
 
   <!-- 
@@ -92,7 +93,7 @@
 <script src="js/bootstrap-lightbox.min.js"></script> -->
 
 	</head>
-	<body>
+	<body onload="initialize()">
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 		<div id="fh5co-header">
@@ -682,14 +683,16 @@
 
 
 							    <!-- Google Map -->
-    <div id="map" class="" style="width:500px; height:600px"></div>
+							<div id="map_canvas" style="width:100%; height:100%"></div> 
+
+<!--     <div id="map" class="" style="width:500px; height:600px"></div>
     <script type="text/javascript" src="custom/js/tabilog.js">
     </script>
         <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb7OPnnqxQiEZPG4T3ACsxXENeRfq5LMs&callback=initMap">
  
         </script>
-    </div>
+    </div> -->
 
 						</div>
 					</div>
@@ -1302,6 +1305,29 @@
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+	<!-- googlemap -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBb7OPnnqxQiEZPG4T3ACsxXENeRfq5LMs&?sensor=false"></script> 
+	<script type="text/javascript">
+
+  function initialize() { 
+    var latlng = new google.maps.LatLng(35.681143,139.767165); 
+    var myOptions = { 
+      zoom: 15, 
+      center: latlng, 
+      mapTypeId: google.maps.MapTypeId.ROADMAP 
+    }; 
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+    var myLatlng = new google.maps.LatLng(35.685867,139.760578);
+    var marker = new google.maps.Marker({
+       position: myLatlng,
+       map: map,
+       title:"Hello 大手門!"
+    });   
+  } 
+ 
+</script> 
 	<!-- 自分で作成したjs -->
 	<script src="js/tabilog.js"></script>
 
