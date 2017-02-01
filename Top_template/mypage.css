@@ -21,6 +21,10 @@
 	text-align:center;
 }
 
+.show-on-hover:hover > ul.dropdown-menu {
+    display:block;    
+}
+
 
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
@@ -167,8 +171,6 @@
 #map_canvas_03,
 #map_canvas_04{
 	clear:both;
-	/*margin-right:5px;
-	margin-left:5px;*/
 }
 
 
@@ -176,11 +178,9 @@ body{
     padding:10px;
 }
 
-.show-on-hover:hover > ul.dropdown-menu {
-    display:block;    
-}
-
 .footer-logo{
   color:white;
   text-align:right;
 }
+
+
